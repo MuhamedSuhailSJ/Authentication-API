@@ -69,7 +69,7 @@ app.post('/login', async (request, response) => {
   const checkUsername = `
     SELECT *
     FROM user
-    WHERE username = '${username}'`
+    WHERE username = '${username}';`
 
   const resultCheck = await db.get(checkUsername)
 
